@@ -1,7 +1,7 @@
-all: main_cacheSim
+all: csim-ref
 
-main_hw1: main_cacheSim.c
-	gcc -std=c99 -Wall -o main_cacheSim main_cacheSim.c 
+main_hw1: csim-ref.c
+	gcc -std=c99 -Wall -o csim-ref csim-ref.c 
 
 clean:
-	rm main_cacheSim
+	rm csim-ref
