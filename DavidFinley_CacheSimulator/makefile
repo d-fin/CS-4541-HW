@@ -1,7 +1,7 @@
 all: csim-ref
 
-main_hw1: csim-ref.c
-	gcc -std=c99 -Wall -o csim-ref csim-ref.c 
+csim-ref: csim-ref.c
+	gcc -Werror -g -std=gnu11 -o csim-ref csim-ref.c -lm
 
 clean:
 	rm csim-ref
